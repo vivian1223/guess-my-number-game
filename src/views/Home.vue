@@ -1,15 +1,15 @@
 <template>
-  <ExpandingCard />
+  <ProgressingBar />
 </template>
 
 <script>
 // @ is an alias to /src
-import ExpandingCard from '@/components/ExpandingCard.vue';
+import ProgressingBar from '@/components/ProgressingBar.vue';
 
 export default {
   name: 'Home',
   components: {
-    ExpandingCard,
+    ProgressingBar,
   },
 };
 </script>
