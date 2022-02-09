@@ -1,5 +1,7 @@
 # expanding-card-vue3-sass
 
+Click here to play the [game](https://vivian1223.github.io/guess-my-number-game/#/)
+
 ## Project setup
 ```
 yarn install
