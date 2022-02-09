@@ -45,3 +45,13 @@ table {
 a {
     text-decoration: none;
 }
+
+// 自定義reset
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+	font-family: 'Press Start 2P', cursive;
+}
