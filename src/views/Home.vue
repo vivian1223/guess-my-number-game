@@ -13,6 +13,7 @@
         Guess My Number!
       </h1>
       <p class="content-score">score: {{ score }}</p>
+      <p class="content-score"> Highest Score : {{ highestScore }} </p>
       <div class="guess-box">
         {{ ramdomNum === answer ? answer :'?' }}
       </div>
@@ -91,6 +92,13 @@ const getNewGame = () => {
   message.value = 'Go!';
   guess.value = 1;
 };
+
+const highestScore = ref(score.value);
+watch(highestScore, (newVal) => {
+  if (newVal > score.value) {
+    highestScore.value = score.value;
+  }
+});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
